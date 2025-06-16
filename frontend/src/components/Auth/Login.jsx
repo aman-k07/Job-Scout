@@ -16,7 +16,7 @@ const Login = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    try {
+    try { 
       const { data } = await axios.post(
         import.meta.env.VITE_API_URL + "/api/v1/user/login",
         { email, password, role },

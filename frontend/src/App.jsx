@@ -23,6 +23,8 @@ const App = () => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
+        console.log("trying to get current user");
+        
         const response = await axios.get(
           import.meta.env.VITE_API_URL + "/api/v1/user/getuser",
           {
